@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>StopWatch</title>
+</head>
+<body>
+    <main>
+        <div class="time_div">
+            
+            <div>
+                <img class="stop_watch_svg" src="./About me-rafiki.svg" alt="">
+            </div>
+            <div class="main_time_div" id="timerDisplay">
+                <span class="time_display" id="time_hour">0 Hr </span>
+                <span class="time_display" id="time_minutes">0 Mins</span>
+                <span class="time_display" id="time_seconds">0 Sec</span>
+                <span class="time_display" id="time_milliseconds">0 Ms</span>
+            </div>
+            <div class="button_div">
+                <button class="button" id="start_button" onclick=""><i class="fas fa-play icon"></i>Start</button>
+                <button class="button" id="pause_button"><i class="fas fa-pause icon"></i>Pause</button>
+                <button class="button" id="reset_button"><i class="fas fa-redo icon"></i>Reset</button>
+                <button class="button" id="countdown_button"><i class="fas fa-stopwatch icon"></i>Countdown</button>
+            </div>
+            
+            <div id="countdown_div" >
+                <i class="fas fa-times icontimes" id="close_countdown"></i>
+                <h5>please select your time</h5>
+                <select class="select_option" id="hour_select">
+                    
+                </select>
+                <select class="select_option" id="minute_select">
+                    
+                </select>
+                <select class="select_option" id="seconds_select">
+                    
+                </select>
+                <div>
+                
+                <button id="countdown_start_button">start countdown</button>
+                </div>
+            </div>
+        </div>
+    </center>
+    </main>
+    <script src="js/js.js">
+    </script>
+</body>
+</html>

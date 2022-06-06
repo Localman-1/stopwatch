@@ -1,0 +1,140 @@
+ @font-face {
+        font-family: font_me;
+        src: url(./BalSan.ttf);
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: red;
+    }
+    main{
+        font-family: font_me;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .stop_watch_svg{
+        width: 70%;
+        height: 15rem;
+    }
+    #welcome{
+        font-family:  font_me;
+        color: white;
+    }
+    .time_div{
+        /* background-color: rgb(207, 137, 6, 80%); */
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 30rem;
+        text-align: center;
+    }
+    .main_time_div{
+        color: white;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        padding: 10px;
+        
+        
+    }
+    .button_div{
+        color: white;
+        font-family: font_me;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .time_display{
+        width: 20%;
+        font-size: 1rem;
+        
+    }
+    .icon{
+        margin-right: 10px;
+    }
+    #countdown_button:checked ~ .countdown_div{
+        visibility: visible;
+    }
+    #countdown_button:checked ~ .button{
+        visibility: hidden;
+    }
+    .select_option{
+        display: inline;
+        padding: 5px;
+        width: 25%;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        border: 1px solid red;
+    }
+    .countdown_button{
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        width:20% ;
+        
+        color: white ;
+        cursor: pointer;   
+        font-family: font_me; 
+    }
+    /* #countdown_start_button{
+        visibility: hidden;
+    } */
+    #countdown_div{
+        width: 70%;
+        height: 12rem;
+        align-self: center;
+        background-color: white ;
+        opacity: 0.9;
+        position: fixed;
+        top: 25%;
+        left: 17%;
+        
+        
+    }
+    .icontimes{
+        float: right;
+        color:red;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .button{
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 7px;
+        margin: 5px;
+        width: 20%;
+        height: 2rem;
+        font-size: larger;
+        color: black ;
+        cursor: pointer;   
+        font-family: font_me; 
+        visibility: visible;
+        display: inline-block;
+    }
+    #countdown_start_button{
+        width: 40%;
+        background-color: red;
+        color: white;
+        height: 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    @media  only screen and (max-width : 650px){
+        .button { 
+            width: 60%;
+        }
+        .time_div{
+            width:100%
+        }
+        #countdown_start_button{
+            width: 80%;
+        }
+        
+    }
